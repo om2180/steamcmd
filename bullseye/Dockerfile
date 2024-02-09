@@ -3,11 +3,11 @@
 ############################################################
 FROM debian:bullseye-slim as build_stage
 
-LABEL maintainer="walentinlamonos@gmail.com"
+LABEL maintainer="admin@palworldrealm.com"
 ARG PUID=1000
 
 ENV USER steam
-ENV HOMEDIR "/home/${USER}"
+ENV HOMEDIR "/home/${USER}/steam"
 ENV STEAMCMDDIR "${HOMEDIR}/steamcmd"
 
 RUN set -x \
